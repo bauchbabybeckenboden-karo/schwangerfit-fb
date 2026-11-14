@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Fragebogen – Bauch · Baby · Beckenboden Schwangerfit</title>
+  <title>Fragebogen Schwangerfit · Wunderwerk Frau</title>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   <script>emailjs.init("11LHuzWy1ssGFyY8Q");</script>
@@ -422,29 +422,62 @@
       .q-card { padding: 18px 18px; }
       .scale-btn { font-size: 12px; }
     }
-  </style>
+  
+  /* ── Wunderwerk Frau: Kopfbereich (einheitlich für alle Seiten) ── */
+  .ww-header { background:#8B6464; color:#F3E9E5; padding:24px 20px; }
+  .ww-inner { max-width:760px; margin:0 auto; display:flex; align-items:center; gap:20px; text-align:left; }
+  .ww-in-hero { margin-bottom:30px; }
+  .ww-logo { height:88px; width:auto; flex-shrink:0; display:block; }
+  .ww-text { min-width:0; }
+  .ww-name { font-family:'Cormorant Garamond', Georgia, serif; font-weight:700; font-size:32px; line-height:1.1; letter-spacing:.5px; color:#F3E9E5; }
+  .ww-line { height:1px; background:#F3E9E5; max-width:320px; margin:8px 0; }
+  .ww-sub { font-family:Arial, Helvetica, sans-serif; font-size:11px; letter-spacing:3px; text-transform:uppercase; color:#F3E9E5; }
+  .ww-tag { font-family:'Cormorant Garamond', Georgia, serif; font-style:italic; font-size:15px; line-height:1.35; color:#F3E9E5; margin-top:6px; }
+  .ww-topic { font-family:Arial, Helvetica, sans-serif; font-size:12px; letter-spacing:3px; text-transform:uppercase; color:#8B6464; text-align:center; margin:0 0 18px; }
+  .ww-topic-hell { color:#F3E9E5; text-align:left; margin:0 0 14px; }
+  @media (max-width:540px) {
+    .ww-inner { flex-direction:column; text-align:center; gap:12px; }
+    .ww-line { margin:8px auto; }
+    .ww-logo { height:76px; }
+    .ww-name { font-size:28px; }
+    .ww-topic-hell { text-align:center; }
+  }
+
+  /* ── Wunderwerk Frau: Lesbarkeit ── */
+  .header-eyebrow { color:#F3E9E5 !important; letter-spacing:3px !important; font-size:12px !important; }
+  .header h1 em { color:#E8D5D0 !important; }
+  .header-subtitle { color:#F3E9E5 !important; }
+  .notice-box { color:#3D2B2B !important; background:#F3E9E5 !important; }
+  .notice-box strong { color:#6F4F4F !important; }
+  [style*="color:var(--rose)"] { color:#6F4F4F !important; }
+  .scale-btn.selected { background:#8B6464 !important; border-color:#8B6464 !important; color:#FFFFFF !important; }
+  .section-num { color:#F3E9E5 !important; }
+</style>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
 </head>
 <body>
 
 <header class="header">
   <div class="header-inner">
-    <div class="logo-wrap">
-      <img src="logo.png" alt="Bauch · Baby · Beckenboden Logo" class="logo-img" />
-      <div class="logo-text">
-        <span class="logo-main">Bauch · Baby · Beckenboden</span>
-        <span class="logo-sub">Schwangerfit</span>
+    <div class="ww-inner ww-in-hero">
+      <img class="ww-logo" src="https://raw.githubusercontent.com/bauchbabybeckenboden-karo/Logos/main/Clitlogo-creme.png" alt="Wunderwerk Frau Logo" />
+      <div class="ww-text">
+        <div class="ww-name">Wunderwerk Frau</div>
+        <div class="ww-line"></div>
+        <div class="ww-sub">Bauch &middot; Baby &middot; Beckenboden</div>
+        <div class="ww-tag">Trageberatungen sowie Sport-, Beckenboden- &amp; somatische Yogakurse für Frauen</div>
       </div>
     </div>
-    <p class="header-eyebrow">Vertraulicher Fragebogen</p>
-    <h1>Willkommen –<br><em>schön, dass du hier bist</em></h1>
-    <p class="header-subtitle">Dieser Fragebogen hilft mir, deine Stunden individuell und achtsam auf dich abzustimmen. Deine Angaben werden vertraulich behandelt.</p>
+    <p class="header-eyebrow">Vertraulicher Fragebogen · Schwangerfit</p>
+    <h1>Willkommen –<br><em>schön, dass Du hier bist</em></h1>
+    <p class="header-subtitle">Dieser Fragebogen hilft mir, Deine Stunden individuell und achtsam auf Dich abzustimmen. Deine Angaben werden vertraulich behandelt.</p>
   </div>
 </header>
 
 <div class="notice">
   <div class="notice-box">
     <strong>Hinweis zur Sicherheit</strong>
-    Es gibt keine richtigen oder falschen Antworten. Deine Angaben dienen ausschließlich dazu, deine Praxis bestmöglich zu begleiten. Du hast auch bei Pflichtfeldern die Möglichkeit, keine Angabe zu machen.
+    Es gibt keine richtigen oder falschen Antworten. Deine Angaben dienen ausschließlich dazu, Deine Praxis bestmöglich zu begleiten. Du hast auch bei Pflichtfeldern die Möglichkeit, keine Angabe zu machen.
   </div>
 </div>
 
@@ -458,16 +491,16 @@
     </div>
 
     <div class="q-card">
-      <p class="q-label">Wie darf ich dich ansprechen? <span style="color:var(--rose)">*</span></p>
+      <p class="q-label">Wie darf ich Dich ansprechen? <span style="color:var(--rose)">*</span></p>
       <input type="text" id="f-name" placeholder="Name oder Spitzname" />
     </div>
 
     <div class="q-card">
-      <p class="q-label">Wie kann ich dich erreichen? <span style="color:var(--rose)">*</span></p>
+      <p class="q-label">Wie kann ich Dich erreichen? <span style="color:var(--rose)">*</span></p>
       <div class="inline-row" style="margin-bottom:12px">
         <div>
           <p style="font-size:12px;color:var(--earth);margin-bottom:6px;font-weight:300">E-Mail-Adresse <span style="color:var(--rose)">*</span></p>
-          <input type="email" id="f-email" placeholder="deine@email.de" />
+          <input type="email" id="f-email" placeholder="Deine@email.de" />
         </div>
         <div>
           <p style="font-size:12px;color:var(--earth);margin-bottom:6px;font-weight:300">Telefonnummer</p>
@@ -487,17 +520,17 @@
     </div>
 
     <div class="q-card">
-      <p class="q-label">Wann ist dein Entbindungstermin?</p>
+      <p class="q-label">Wann ist Dein Entbindungstermin?</p>
       <input type="date" id="f-et" />
     </div>
 
     <div class="q-card">
-      <p class="q-label">In welcher Schwangerschaftswoche wirst du zu Kursbeginn sein? <span style="color:var(--rose)">*</span></p>
+      <p class="q-label">In welcher Schwangerschaftswoche wirst Du zu Kursbeginn sein? <span style="color:var(--rose)">*</span></p>
       <input type="number" id="f-ssw" placeholder="z. B. 22" min="1" max="42" style="max-width:140px" />
     </div>
 
     <div class="q-card">
-      <p class="q-label">Bist du bereits Mutter?</p>
+      <p class="q-label">Bist Du bereits Mutter?</p>
       <div class="radio-group" id="mutter-group">
         <label class="r-option" onclick="selectRadio(event, this, 'mutter-group')">
           <input type="radio" name="mutter" value="vaginal" /><span class="r-dot"></span>Ja, vaginal entbunden
@@ -518,7 +551,7 @@
     </div>
 
     <div class="q-card">
-      <p class="q-label">Hast du zur Zeit ein Sportverbot? <span style="color:var(--rose)">*</span></p>
+      <p class="q-label">Hast Du zur Zeit ein Sportverbot? <span style="color:var(--rose)">*</span></p>
       <div class="radio-group" id="sportverbot-group">
         <label class="r-option" onclick="selectRadio(event, this, 'sportverbot-group')">
           <input type="radio" name="sportverbot" value="nein" /><span class="r-dot"></span>Nein
@@ -564,7 +597,7 @@
   <div class="section">
     <div class="section-label">
       <div class="section-num">4</div>
-      <h2 class="section-title">Über dich</h2>
+      <h2 class="section-title">Über Dich</h2>
     </div>
 
     <div class="q-card">
@@ -573,7 +606,7 @@
     </div>
 
     <div class="q-card">
-      <p class="q-label">Wie bist du auf mich aufmerksam geworden?</p>
+      <p class="q-label">Wie bist Du auf mich aufmerksam geworden?</p>
       <textarea id="f-aufmerksam" placeholder="z. B. Empfehlung, Instagram, Hebamme, Google …" style="min-height:60px"></textarea>
     </div>
   </div>
@@ -613,8 +646,8 @@
 <div id="thank-you">
   <div class="ty-icon">🌿</div>
   <h2>Herzlichen Dank.</h2>
-  <p style="margin-bottom:20px">Ich freue mich auf dich und unsere gemeinsame Schwangerfit-Zeit.<br>Ich melde mich in Kürze bei dir.</p>
-  <p style="font-size:13px; color:var(--earth); font-style:italic; max-width:480px; margin:0 auto; line-height:1.85;">Schwangerfit ist Bewegung mit Achtsamkeit für dich und dein Baby. 🤍</p>
+  <p style="margin-bottom:20px">Ich freue mich auf Dich und unsere gemeinsame Schwangerfit-Zeit.<br>Ich melde mich in Kürze bei Dir.</p>
+  <p style="font-size:13px; color:var(--earth); font-style:italic; max-width:480px; margin:0 auto; line-height:1.85;">Schwangerfit ist Bewegung mit Achtsamkeit für Dich und Dein Baby. 🤍</p>
 </div>
 
 <script>
